@@ -15,7 +15,7 @@ export const toggleTodo = (id) => ({
   id,
 });
 
-const initialState = [{ id: 1, text: '예시', done: false }];
+const initialState = [{ id: 0, text: '예시', done: false }];
 
 export default function todos(state = initialState, action) {
   switch (action.type) {
