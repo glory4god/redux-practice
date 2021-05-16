@@ -2,6 +2,7 @@ import React from 'react';
 
 const Counter = ({ number, diff, onIncrease, onDecrease, onSetDiff }) => {
   const onChange = (e) => {
+    console.log(parseInt(e.target.value));
     onSetDiff(parseInt(e.target.value, 10));
   };
   return (
